@@ -17,3 +17,18 @@
 .target p {
   color: green;
 }
+.targetTwo {
+  display: flex;
+  margin-top: 30px;
+}
+.targetTwo img {
+  max-height: 270px;
+  max-width: 270px;
+}
+.produkt-card {
+  margin: 17px;
+}
+.product-title {
+  color: #2f8dff;
+  margin-left: 30px;
+}

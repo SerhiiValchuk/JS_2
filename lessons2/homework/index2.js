@@ -92,7 +92,7 @@ let products = [
 document.write('<div class="targetTwo">');
 for (const product of products) {
  document.write(`<div class="produkt-card">
-<h3 class="product-title"> ${product. title} Price - ${product. price}</h3>
+<h3 class="product-title"> ${product. title} price - ${product. price}</h3>
 <img src=${product. image} alt="" class="product-image">
 </div>`);
 }
