@@ -55,12 +55,18 @@ let simpsons = [
 document.write('<div class="target">');
 for (const simpson of simpsons) {
  document.write(`<div>
-<h2>${simpson.name} ${simpson. surname} ${simpson. age}</h2>
-<p>${simpson. info}</p>
-<img src=${simpson. photo} alt="">
+<h2>Ім'я: ${simpson.name} Прізвище:  ${simpson. surname} Вік: ${simpson. age}</h2>
+<p> Інформація: ${simpson. info}</p>
+<img src=${simpson. photo} alt="Фото">
 </div>`);
 }
 document.write('</div>');
+
+/*
+			Використовуючи данні з масиву, за допомоги document.write та циклу
+            побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
+            Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+                */
 
 
 

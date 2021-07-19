@@ -11,3 +11,9 @@
   max-width: 200px;
   max-height: 170px;
 }
+.target h2 {
+  color: darkslateblue;
+}
+.target p {
+  color: green;
+}
