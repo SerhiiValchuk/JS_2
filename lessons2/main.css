@@ -1,0 +1,13 @@
+.target {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+.target div {
+  margin: 3px;
+  width: 200px;
+}
+.target div img {
+  max-width: 200px;
+  max-height: 170px;
+}
