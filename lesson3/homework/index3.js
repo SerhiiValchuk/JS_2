@@ -53,10 +53,10 @@ ul('Lorem ipsum dolor sit amet.');
 //- створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)//
 function ul2(li){
- for (let i
-
  document.write(`<ul>
 <li>${li}</li>
 </ul>`);
 }
+ul2('Lorem ipsum dolor sit amet.');
+ul2('Lorem ipsum dolor sit amet.');
 ul2('Lorem ipsum dolor sit amet.');
