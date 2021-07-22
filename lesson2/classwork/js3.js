@@ -55,7 +55,7 @@ for (let i=0;i<others.length;i++){
 }
 //Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 let all = [1,'sea','ocean',null,undefined,45,78,true,'mountain','river'];
- for(const al of all){
-     if (al === (typeof))
-
+ for (let al of all){
+     if (  typeof al === 'boolean');
+     document.write(`${al}`);
  }
