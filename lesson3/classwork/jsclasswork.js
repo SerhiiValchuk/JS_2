@@ -60,8 +60,7 @@ console.log(moos);
 function sum(numeray) {
     let add = 0;
     for (let a = 0; a < numeray.length; a++) {
-        let Addindex = numeray[a];
-        add += Addindex;
+        add += numeray[a];
     }
     return add;
 }
@@ -91,7 +90,7 @@ function rand() {
 
 console.log(rand())
 // Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
-let user = {name: 'vasya', age: 41, status: true, skills:'HTML'};
+let user = [{name: 'vasya', age: 41, status: true, skills:'HTML'}];
 function kley() {
  for (let key in user) {
     console.log(key);
@@ -103,7 +102,7 @@ console.log(kley(user));
 let user2 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
 function kley2() {
     for (let key in user2) {
-        console.log( user2[key]);
+        console.log( user2[key[key]]);
     }
     return user2;
 }
