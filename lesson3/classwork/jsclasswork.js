@@ -90,8 +90,8 @@ function rand() {
 
 console.log(rand())
 // Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
-let user = [{name: 'vasya', age: 41, status: true, skills:'HTML'}];
-function kley() {
+//let user = [{name: 'vasya', age: 41, status: true, skills:'HTML'}];
+/*function kley() {
  for (let key in user) {
     console.log(key);
 }
@@ -106,4 +106,16 @@ function kley2() {
     }
     return user2;
 }
-console.log(kley2());
+console.log(kley2());*/
+
+
+
+function returned2(list) {
+let values = [];
+for(const listItems of list) {
+    values.push(...Object.values(listItems))
+}
+return values
+}
+let user3 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+console.log(returned2(user3));
