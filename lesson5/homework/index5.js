@@ -42,4 +42,8 @@ for(const liElement of li_class){
     console.log(liElement);
     liElement.style.color = 'red'
 }
+for(const clicks of li_class)
+clicks.onclick = function (){
+    console.log('fhhfjfjfjhshdhlfsjkhf');
+};
 
