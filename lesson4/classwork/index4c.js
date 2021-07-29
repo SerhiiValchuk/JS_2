@@ -45,16 +45,16 @@ function Car(model, producent, year, max_speed, engine_volume){
         console.log(`їдемо зі швидкістю ${this.max_speed} на годину`)
     }
     this.inf = function (){
-        console.log(`${this.model}\n ${this.producent}\n ${this.year}\n ${this.max_speed}\n ${this.engine_volume}`)
+        console.log(this)
     }
-    this.increaseMaxSpeed = function (){
-        let newSpeed = 30;
-        console.log(`${this.max_speed}` + newSpeed);
+    this.increaseMaxSpeed = function (newSpeed = 0){
+        this.max_speed += newSpeed;
     }
-    this.changeYear = function () {
-        let newValue = this.year;
-        newValue = 2007
-        console.log(`${this.year}`);
+    this.changeYear = function (newValue) {
+       this.year = newValue;
+    }
+    this.addDriver = function (driver){
+        this.driver = driver;
     }
 
 }
@@ -67,10 +67,48 @@ const infa = new Car('camry','toyota',2000, 240,2.3);
 
 infa.inf();
 
-const speed = new Car('camry','toyota',2003,240 ,2.3);
+const volvo = new Car('xc70','volvo',2005,270,4.0);
+volvo.inf();
+volvo.increaseMaxSpeed(20);
+volvo.inf();
+volvo.addDriver({name: 'Dimas'});
+volvo.inf()
+volvo.changeYear(2012);
+volvo.inf()
 
-speed.increaseMaxSpeed();
 
-const year = new Car('x5','bmw',2005,250, 2.5)
 
-year.changeYear();
+
+//- (Те саме, тільки через клас)
+// Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+//     -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+//     -- info () - яка виводить всю інформацію про автомобіль
+//     -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+//     -- changeYear (newValue) - змінює рік випуску на значення newValue
+//     -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+class Car2 {
+    constructor(model, producent, year, max_speed, engine_volume) {
+        this.model = model;
+        this.producent = producent;
+        this.year = year;
+        this.max_speed = max_speed;
+        this.engine_volume = engine_volume;
+
+
+        this.drive = function () {
+            console.log(`їдемо зі швидкістю ${this.max_speed} на годину`)
+        }
+        this.inf = function () {
+            console.log(this)
+        }
+        this.increaseMaxSpeed = function (newSpeed = 0) {
+            this.max_speed += newSpeed;
+        }
+        this.changeYear = function (newValue) {
+            this.year = newValue;
+        }
+        this.addDriver = function (driver) {
+            this.driver = driver;
+        }
+    }
+}
