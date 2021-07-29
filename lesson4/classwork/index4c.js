@@ -52,8 +52,8 @@ function Car(model, producent, year, max_speed, engine_volume){
         console.log(`${this.max_speed}` + newSpeed);
     }
     this.changeYear = function () {
-        let newValue = 2007;
-        this.year = newValue;
+        let newValue = this.year;
+        newValue = 2007
         console.log(`${this.year}`);
     }
 
