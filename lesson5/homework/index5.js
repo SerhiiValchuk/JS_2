@@ -23,13 +23,6 @@ text_two.innerText = 'lorem dfg dfgdfg sssdfewerjgnhttyjg fdfthdfdfhehrjfgn ewdf
 text_two.style.background = 'red';
 text_two.style.color = 'blue';
 
-let allCollection = document.getElementsByTagName("li");
-console.log(allCollection);
-for (const li of allCollection) {
-    console.log(li);
-    //li.style.background = 'red';
-    li.style.color = 'blue';
-}
 //     -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 let class_list = document.getElementsByTagName('div');
 console.log(class_list);
@@ -40,6 +33,13 @@ for (const id_Ruls of class_list) {
 }
 //-- отримати всі елементи з класом fc_rules. визначити їм 2 події "клік", одна вивдоить текст елементу, інша довільний ьексь
 //     -- поміняти колір тексту у всіх елементів fc_rules на червоний
+let allCollection = document.getElementsByTagName("li");
+console.log(allCollection);
+for (const li of allCollection) {
+    console.log(li);
+    //li.style.background = 'red';
+    li.style.color = 'blue';
+}
 let li_class = document.getElementsByClassName('fc_rules');
 console.log(li_class);
 for (const liElement of li_class) {
