@@ -154,15 +154,18 @@ class Princ {
         this.age = age;
         this.size_found = size_found;
     }
+    findPrincess = (girlsArr) => {
+        for (const girl of girlsArr) {
+            if (girl.foot_size === this.size_found) {
+                return girl;
+            }
+        }
+    }
 }
 let prince = new Princ('Victor',28,37.5);
-console.log(prince);
 
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-//??????????не зумів зробити цикл котрий видасть вірну відповідь з массиву poppi, видавало object,object. Покажи як має бути
-
 // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-let finde = popii.find(function (value){
-    return value.foot_size === 37.5;
-})
-console.log(finde);
+const girl = prince.findPrincess(popii);
+console.log(girl);
+
