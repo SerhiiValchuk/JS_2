@@ -53,14 +53,8 @@ for (const a_a2 of text7) {
 //h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a ????????
 let text8 = document.getElementsByTagName('a');
 for (const a_a3 of text8) {
-    a_a3.classList.add('XXX');
+    a_a3.classList.add(`element_${a_a3.innerText}`);
     console.log(a_a3)
-    /*let xxx = document.getElementsByClassName('XXX');
-    for ( const xxx_t of xxx) {
-        xxx_t.textContent === a_a3.textContent;
-        console.log(xxx_t);
-    }*/
-    //?????Тут не зрозумів трохи умову,шось хімічив але не вийшло(
 }
 
 //i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
